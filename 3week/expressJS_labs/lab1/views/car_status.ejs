@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Hey Sunny</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    
+    <h1> 🚗 Welcome to Dan's Garage  🤖</h1>
+
+
+
+    <h4>Car status👴🏽 </h4>
+    <h4>Your car is <%= carType %> a  car!</h2>
+
+
+    <div>
+ 
+    <form action="/car_status" method="POST">
+    <label for="">Please enter the year of your vehicle:</label>
+     
+    <input type="number" min="1900" max="2099" step="1" value="2018" name="carYear" />
+    <input type="submit" name="" value="Submit">
+
+        
+    </form>
+    </div>
+
+    </body>
+</html>

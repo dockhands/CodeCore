@@ -1,0 +1,86 @@
+<!-- 
+    DOCTYPE is not a tag. it's an annotation for the browswer indicating what 
+    version of HTML the document is using. Simply writing hte like below means 
+    that its using version 5
+-->
+<!DOCTYPE html> 
+
+<!-- The <html> tag is awlays the root or commenon ancesstor aof 
+    all html tags in a document -->
+<html> 
+
+    <!-- this is the head tagL contaains infor about the docmument, 
+        links to loaad and script tags to load JS  -->
+    <head> 
+        <title> HTML & CSS Demo</title>
+        <link rel="stylesheet" href="stylesheets/main.css">
+
+    </head>
+
+    <!-- body tag holds all the tags in doc to be displaed-->
+<body> 
+     <header> 
+         <nav>
+            <a href="http://www.dollarcollective.com"> Dollar Collective</a>
+            <a href="http://nyan.cat"> Nyan Cat</a>
+            <a href=""> Boards </a>
+            <a href=""> Profiles</a>
+            <!-- form doesn't act as text -- or in line -- it takes up whole line itself -->
+            <form action="/process_search" class="form_inline">
+                    <input type="search" name="query" id="query">
+                    <input type="submit" value="Search">
+
+
+             </form>
+        </nav>
+    </header>
+    <main>  
+
+        <!-- The "id" HTML attribute works with any tag. 
+            It's used as a unique idtenfier like a person's full name -->
+    <section id="starred-boards"> 
+        <h1> Starred Boards</h1>
+        <ul>
+            <li> Management</li>
+            <li> Learning to Hack
+            <div>
+                <img width="200px" src="https://images.pexels.com/photos/63332/science-world-false-creek-vancouver-british-columbia-63332.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Grey DOme Building">
+            </div>
+
+            </li>
+
+
+        </ul>
+    </section>
+
+    <section id="personal boards">
+        <h1>Personal Boards</h1>
+        <ul>
+            <li> Management</li>
+            <div>
+                    <img width="200px" src="https://images.pexels.com/photos/850602/pexels-photo-850602.jpeg?auto=compress&cs=tinysrgb&h=350" alt="dogs">
+                </div>
+    
+            <li> Learning to Hack   </li>
+                    <div>
+                            <img width="200px" src="https://images.pexels.com/photos/416196/pexels-photo-416196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="dogs">
+                        </div>
+         
+            <li> My ideas</li>
+            <li> Create New Board...</li>
+        </ul>
+
+    </section>
+
+  
+
+    </main>
+ </body>
+
+
+
+</html>
+
+
+
+

@@ -1,4 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Reminders</title>
+    <link rel="stylesheet" type="" href="/stylesheets/bootstrap.min.css">
+
+    <script src="/scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="/scripts/popper.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+  </head>
+<body>
+    
+
+
 <h1> Notes </h1>
 
-<h4><%=task.title%> </h4>
-<h4><%=task.bodyText%> </h4>
+<h4>
+
+
+
+<% tasks.forEach(function(task) {%> 
+
+   
+<div class="card" style="width: 18rem;">
+<div class="card-body">
+  <h5 class="card-title"><%=task.title%> </h5>
+  <p class="card-text"><%=task.bodyText%></p>
+  <a href="#" class="btn btn-primary">Go somewhere</a>
+</div>
+</div>
+   
+   
+    <% });%> 
+
+
+
+      
+</body>
+
+</html>

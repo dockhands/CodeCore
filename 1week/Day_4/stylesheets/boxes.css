@@ -1,0 +1,41 @@
+
+.common {
+    position: absolute;
+    display: inline-block;
+    border-radius: 0 0 100% 0;
+    border: 5px solid white;
+    
+}
+
+#red { 
+    background-color: red;
+    height: 10%;
+    width: 10%;
+}
+
+#orange { 
+    background-color: orange;
+    height: 20%;
+    width: 20%;
+}
+
+
+#yellow { 
+    background-color: yellow;
+    height: 30%;
+    width: 30%;
+}
+
+#green {
+    background-color: green;
+    height: 40%;
+    width: 40%;
+}
+
+#blue {
+    background-color: blue;
+    height: 50%;
+    width: 50%;
+}
+
+

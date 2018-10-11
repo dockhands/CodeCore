@@ -1,0 +1,52 @@
+
+.resume_container { 
+
+width: 90%;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+h2{ 
+background-color: gainsboro;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+#name { 
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#address { 
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#phone_number{ 
+text-align: left;
+
+float: left;
+
+}
+
+#email{ 
+    text-align: right;
+    
+    float: right;
+    }
+
+#blurb{ 
+        text-align: center;
+        border: double;
+        clear: both;
+        display: block;
+        padding: 10px;
+        margin: 0px;
+        margin-top: 30px;
+        }
+    
+

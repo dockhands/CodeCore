@@ -1,0 +1,60 @@
+html {
+
+font-family: Helvetica, Arial,  sans-serif
+
+}
+
+header { 
+    background-color: slateblue;
+    padding: 5px;
+}
+
+body {
+margin: 0;
+}
+
+nav > a { 
+    color: white;
+    text-decoration: none;
+}
+
+form { 
+    display: inline;
+}
+
+ul { 
+padding: 0; 
+list-style: none; 
+}
+
+ul > li { 
+height: 75px;
+background-color: seagreen;
+border-radius: 5px;
+color: white;
+padding: 10px;
+margin: 10px;
+
+}
+
+main { 
+/* vertical | horizational  */
+    padding: 0 10px;
+
+    /* top | right | bottom | left */
+    /* padding: 0 10px 0 10px; */
+
+}
+
+
+/* How do you select an element by the attribute ( e.e.g data-content)  */
+
+[data-content] { 
+}
+
+/* How do you select all child elements of ul, but the last */
+
+ul > *:not(:last-child) { 
+
+
+}

@@ -1,11 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Reminders</title>
+
+    <link rel="stylesheet" type="" href="/stylesheets/bootstrap.min.css">
+    <script src="/scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="/scripts/popper.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<main class="container-fluid">
+
 <h4>Add your reminder note plz</h4>
 
-
+<div class="form-group">
 <form action="/notes" method="POST" >
-  Title: <input type="text" name="title"> <br> 
-  <br>
-  Body: <textarea name="bodyText"></textarea>
-  
-  <input type="submit">
-</form>
 
+  Title: <input  class="form-control" type="text" name="title"> <br> 
+  <br>
+  Body: <textarea class="form-control" name="bodyText"></textarea>
+  
+  <input class="form-control" type="submit">
+
+</form>
+</div>
+
+</main>
+    
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+
+<!DOCTYPE html> 
+
+<html> 
+
+
+    <head> 
+        <title> HTML & CSS Demo</title>
+        <link rel="stylesheet" href="stylesheets/main.css">
+
+    </head>
+
+
+<body> 
+     <header> 
+        
+          
+    </header>
+    <main>  
+
+<h1> Joe's Pizza Restaurant</h1>
+
+<h2> Order Form</h2>
+            <form action="/pizza_order.js">
+
+            
+                    First Name: <input type="text" name="fname" placeholder="First Name"><br>
+                    Last Name: <input type="text" name="lname" placeholder="Last Name"><br>
+                    Password: <input type="text" name="pword" placeholder= "optional""><br>
+                    Email: <input type="text" name="email" placeholder= "Email""><br>
+
+                    <br>
+                 
+                    <label for=" Toppings"> Order Method: </label> 
+                <ul>
+                    <input type="radio" name="topping" value="cheese" checked> Take Out<br>
+                    <input type="radio" name="topping" value="pepperoni"> Delivery<br>
+                </ul>
+
+                <label for=" Toppings"> Toppings: </label> <br>
+                    <input type="checkbox" name="toppings" value="cheese"> Cheese<br>
+                    <input type="checkbox" name="toppings" value="mushrooms" checked> Mushrooms<br>
+                    <input type="checkbox" name="toppings" value="olives" checked> Olives<br>
+                    <br>
+                    
+                    <label for=" Toppings"> Size: </label> <br>
+                    <select>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                           
+                    </select>
+                    <br>
+                    <br>
+
+                    <textarea name="comment" form="usrform">Enter text here...</textarea>
+
+               
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                          
+                
+
+              </form>
+  
+<!-- 
+              labels
+input text fields
+name (with placeholder text)
+password (optional)
+email etc
+radio buttons
+check boxes
+drop down lists
+text area
+button
+submit button
+reset button -->
+
+    </main>
+ </body>
+
+
+
+</html>

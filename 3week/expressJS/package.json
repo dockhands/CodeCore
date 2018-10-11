@@ -1,0 +1,27 @@
+{
+  "name": "js_express",
+  "version": "1.0.0",
+  "description": "first exrpess.js app ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "db:create": "createdb -e express_demo",
+    "db:drop": "dropdb -e express_demo"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "faker": "^4.1.0",
+    "knew": "0.0.0",
+    "knex": "^0.15.2",
+    "morgan": "^1.9.1",
+    "pg": "^7.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}

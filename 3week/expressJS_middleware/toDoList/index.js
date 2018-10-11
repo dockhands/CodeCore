@@ -27,6 +27,12 @@ app.use( (request, response, next) => {
 app.use(cookieParser());
 
 //CUSTOM USERNAME MIDDLEWARE
+
+// STATIC ASSETS 
+//use path.join to combine strings into directory paths, for ex
+// ("/, "users", "bob" 'hawkins") // "/users/bob/hawkins"
+app.use(express.static(path.join(__dirname,"public")));
+
 app.use((request, response, next) => { 
     // the 'cookie-parser' middleware.
   console.log("🍪 🍪 🍪 🍪 🍪 🍪 ");
@@ -65,12 +71,21 @@ app.get('/reminder', function (req, response) {
     response.render('reminder');
   });
 
+  
+  const tasks = [];
   app.get('/notes', function (req, response) {
 
-    const _task = req.cookies.task;
+    const taskRequest = req.cookies.task;
+    console.log("🍪  this is task request 🍪 ", taskRequest);
+
+   
+
+    tasks.push(taskRequest);
+
+    console.log("🍪 🍪 🍪  this is my cookie array🍪 🍪  🍪 🍪 ", tasks);
 
     response.render('notes', {
-        task: _task
+        tasks: tasks
     });
 
     // response.render('notes', {
@@ -91,10 +106,12 @@ app.post("/notes", (request, response) => {
     console.log("Title => ", title)
     console.log("Body => ", bodyText)
     
-    //const task = {};
+    const cookieArray = [];
   
     response.cookie("task", {title, bodyText}, {maxAge:COOKIE_MAX_AGE });
+
     // response.redirect("/language");
+   
 
     // response.cookie("bodyText", bodyText, {maxAge:COOKIE_MAX_AGE });
     
@@ -104,16 +121,6 @@ app.post("/notes", (request, response) => {
         // title: title, 
         // bodyText: bodyText});
   });
-
-
-
-
-
-
-
-
-
-
 
 
 

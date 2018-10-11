@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+
+
+# Write a script, deleteMarked.js, that reads lines from a CSV file taken as an argument. It should copy lines from the read file ignoring lines where the third column equals yes into a new file. The name of the new file should be taken as an argument as well.

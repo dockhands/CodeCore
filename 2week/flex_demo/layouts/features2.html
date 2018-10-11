@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Features 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+    
+    html { 
+        --spacer: 10px;
+    }
+
+
+     /* selects flex container */
+    
+    * { 
+        box-sizing: border-box;
+
+    }
+
+    body {
+        margin:0;
+    }
+    
+    main { 
+        display: flex;
+        height: 100vh;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+    /* selects flex items */
+    main > div { 
+        min-height: 100px;
+        background-color: gainsboro;
+        min-width: 100px;
+        width: calc(100%/3 - 2*10px);
+        margin: var(--spacer);
+    }
+    
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </main>
+    
+</body>
+</html>
+
+

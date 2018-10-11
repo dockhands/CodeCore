@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>4 column</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+    
+/*
+        box-sizing is used to determin the full height and/width of an
+        element is calculated:flex-direction:
+         - content-box
+          content height || width == height or width property
+          full height || full width == height/width + padding + margin + border
+        - border-box
+          content height || width == height/width - border - padding
+          full height || width == height/width + margin
+      */
+
+
+     /* selects flex container */
+    
+    * { 
+        box-sizing: border-box;
+
+    }
+
+    body {
+        margin:0;
+    }
+    
+    main { 
+        display: flex;
+        margin: 20px 10px;
+        height: 100vh;
+    }
+    
+    /* selects flex items */
+    main > div { 
+        min-height: 100px;
+        margin: 0 10px; 
+        background-color: gold;
+        flex-grow: 1;
+
+    }
+    
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </main>
+    
+</body>
+</html>
+
+
